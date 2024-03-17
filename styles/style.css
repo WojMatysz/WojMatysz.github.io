@@ -1,0 +1,90 @@
+body
+{
+	background-color: #000000;
+}
+
+#container
+{
+	width: 940px;
+	margin: auto;
+	color: white;
+	background-color: #282A3A;
+}
+
+#top
+{
+	height: 150px;
+}
+
+#middle
+{
+	height: 700px;
+}
+
+#bottom
+{
+	height: 50px;
+	background-color: #735F32;
+}
+
+#logo
+{
+	height: 100px;
+	background-color: #735F32;
+}
+
+#mainMenu
+{
+	float: left;
+	margin-top: 10px;
+	margin-left: 200px;
+}
+
+#leftMenu
+{
+	float: left;
+	height: 700px;
+	width: 200px;
+}
+
+#content
+{
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#footer
+{
+	text-align: center;
+}
+
+
+.button
+{
+	width: 100px;
+	height: 40px;
+	border: none;
+	color: white;
+	padding: 16px, 32px;
+	text-align: center;
+	font-size: 16px;
+	background-color: #C69749;
+	<!-- background-color: gray; -->
+}
+
+.mainMenuButton
+{
+	background-color: #006931;
+}
+
+.leftMenuButton
+{
+	width: 190px;
+	margin-bottom: 3px;
+
+}
+
+.clearFloat
+{
+	clear: both;
+}
