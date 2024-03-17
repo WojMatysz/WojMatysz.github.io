@@ -57,6 +57,9 @@ p
 
 #content
 {
+	overflow: hidden;
+	overflow-y: auto;
+	height: 690px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
