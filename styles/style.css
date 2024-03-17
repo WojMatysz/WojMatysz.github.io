@@ -3,6 +3,11 @@ body
 	background-color: #000000;
 }
 
+p
+{
+	margin-top: 10px;
+}
+
 #container
 {
 	width: 940px;
@@ -42,9 +47,12 @@ body
 
 #leftMenu
 {
+	align-content: center;
+	margin-left: 10px;
+	margin-right: 10px;
 	float: left;
-	height: 700px;
-	width: 200px;
+	height: 690px;
+	width: 180px;
 }
 
 #content
@@ -56,6 +64,7 @@ body
 #footer
 {
 	text-align: center;
+	padding: 15px;
 }
 
 
@@ -69,7 +78,6 @@ body
 	text-align: center;
 	font-size: 16px;
 	background-color: #C69749;
-	<!-- background-color: gray; -->
 }
 
 .mainMenuButton
@@ -79,7 +87,7 @@ body
 
 .leftMenuButton
 {
-	width: 190px;
+	width: 180px;
 	margin-bottom: 3px;
 
 }
@@ -88,3 +96,4 @@ body
 {
 	clear: both;
 }
+
