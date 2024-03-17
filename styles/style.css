@@ -85,11 +85,21 @@ p
 	background-color: #006931;
 }
 
+.mainMenuButton:hover
+{
+	background-color: #005921;
+}
+
 .leftMenuButton
 {
 	width: 180px;
 	margin-bottom: 3px;
 
+}
+
+.leftMenuButton:hover
+{
+	background-color: #B58739;
 }
 
 .clearFloat
