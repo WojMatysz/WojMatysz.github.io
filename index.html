@@ -3,7 +3,8 @@
 	<head>
 		<meta charset = "UTF-8"/>
 		<title>Personal Site</title>
-		<link rel = "stylesheet type = "text/css" href = "styles/style.css"/>
+		<link rel = "stylesheet" type = "text/css" href = "styles/style.css"/>
+		<link rel = "stylesheet" type = "text/css" href = "styles/switch.css"/>
 		<meta name = "desctiption" content = "Desctiption of site"/>
 		<meta name = "keywords" content = "githubsite, onlineCv"/>
 		<script src = "jquery/jquery-3.7.1.min.js"></script>
@@ -17,6 +18,13 @@
 		<div id = "container">
 			<div id = "top">
 				<div id = "logo">
+						<div class = "switch">
+							<input type = "radio" id = "english" name = "language" value = "en"/>
+							<label for = "english" class = "switchLabel">EN</label>
+							<input type = "radio" id = "polish" name = "language" value = "pl"/>
+							<label for = "polish" class = "switchLabel">PL</label>
+							<span class = "slider"></span>
+						</div> <!-- switch --> 
 				</div> <!-- logo -->
 				<div id = "mainMenu">
 					<button class = "button mainMenuButton" data-file = "pages/en/basicInfo.html">Basic Info</button>

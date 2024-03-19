@@ -1,0 +1,93 @@
+/* Variables */
+:root
+{
+	--switch-border-color: white;
+	--switch-bgcolor: #282A3A;
+	--switch-radius: 50em;
+	--switch-padding: 3px;
+	--switch-width: 50px;
+	--switch-height: 20px;
+	--slider-bgcolor: #C69749;
+	--lable-text-color: white;
+	--lable-text-color-hover: white;
+	--animation-duration: 400ms;
+}
+
+/* The switch - the box around the slider */
+.switch 
+{
+  position: absolute;
+  display: inline-flex;
+  width: var(--switch-width);
+  height: var(--switch-height);
+  padding: var(--switch-padding);
+  left: 5px;
+  top: 5px;
+  border: 1px solid var(--switch-border-color);
+  border-radius: var(--switch-radius);
+  background-color: var(--switch-bgcolor);
+}
+
+
+/* Hide default HTML radio button */
+.switch input 
+{
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* Labels of the switch */
+.switchLabel
+{
+	display: inline-block;
+	z-index: 2;
+	text-align: center;
+	width: calc(var(--switch-width)*0.5);
+	background-color: transparent;
+	color: var(--label-text-color);
+	border-radius: var(--switch-radius);
+	transition: color var(--animation-duration) ease-out,
+	background-color var(--animation-duration) ease-out;
+}
+
+.switchLabel:hover
+{
+	color: var(--label-text-color-hover);
+}
+
+/* Slider */
+.switch .slider {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  cursor: default;
+  top: var(--switch-padding);
+  left: var(--switch-padding);
+  height: var(--switch-height);
+  width: calc((var(--switch-width) + var(--switch-padding)) *0.5);
+  background-color: var(--slider-bgcolor);
+  border-radius: var(--switch-radius);
+  transition: transform var(--animation-duration) ease-out,
+  background-color var(--animation-duration) ease-out;
+}
+
+.switch input[type=radio]:not(:checked) + .switchLabel
+{
+	cursor: pointer;
+}
+
+.switch input#polish:checked ~ .slider 
+{
+  transform: translateX(calc((var(--switch-width) - var(--switch-padding))/2));
+}
+
+.switch input#english:checked ~ .slider 
+{
+  transform: translateX(calc(0-(var(--switch-width) - var(--switch-padding))/2));
+}
+
+.switch input[type=radio]:not(:checked), .switch input[type=radio]:checked 
+{
+  display: none;
+}

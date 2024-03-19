@@ -8,6 +8,20 @@ p
 	margin-top: 10px;
 }
 
+a
+{
+	color: white;
+	text-decoration: none;
+}
+
+a:visitted
+{
+	color: white;
+	text-decoration: none;
+}
+
+
+
 #container
 {
 	width: 940px;
@@ -34,6 +48,7 @@ p
 
 #logo
 {
+	position: relative;
 	height: 100px;
 	background-color: #735F32;
 }
@@ -42,6 +57,7 @@ p
 {
 	float: left;
 	margin-top: 10px;
+	margin-bottom: 5px;
 	margin-left: 200px;
 }
 
