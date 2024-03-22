@@ -21,6 +21,7 @@ function changeLanguageOfPage( fromLanguage, toLanguage ) {
 	changeLinksInButtons(fromLanguage, toLanguage);
 	changeCaptionsOnButtons(toLanguage);
 	currentLanguageOfPage = toLanguage;
+	reloadContentInNewSelectedLanguage(fromLanguage, currentLanguageOfPage);
 };
 
 function changeLinksInButtons(fromLanguage, toLanguage) {
@@ -56,3 +57,9 @@ function changeCaptions(json)
 		}
 	})
 };
+
+function reloadContentInNewSelectedLanguage(fromLanguage, toLanguage)
+{
+	pathToCurrentLoadedContent = pathToCurrentLoadedContent.replace("/" + fromLanguage + "/", "/" + toLanguage + "/");
+	changeContent(pathToCurrentLoadedContent);
+}
