@@ -63,3 +63,10 @@ function reloadContentInNewSelectedLanguage(fromLanguage, toLanguage)
 	pathToCurrentLoadedContent = pathToCurrentLoadedContent.replace("/" + fromLanguage + "/", "/" + toLanguage + "/");
 	changeContent(pathToCurrentLoadedContent);
 }
+
+
+$(document).ready( function() {
+	let checkedInputValue = $('.switch input:checked').val();
+	changeLanguageOfPage(currentLanguageOfPage, checkedInputValue);
+}
+);
